@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+        
+        .titre {
+            display: flex;
+            flex-direction: row;
+            padding-top: 90px;
+            padding-left: 40%;
+        }
+        
+        
+        div > h2:nth-child(1) {
+            font-size: 20px;
+            color: darkcyan;
+            padding-right: 20px;   
+            cursor: pointer;
+        }
+        
+          h2:nth-child(2) {
+            font-size: 20px;
+            color: darkcyan;
+            cursor: pointer;
+
+        }
+          
+        
+        div > p {
+            font-size: 12px;
+            color: darkblue;
+            width: auto;
+            height: 0px;
+            overflow: hidden;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 20px;
+            padding-left: 40%;
+        }
+        
+    
+    
+    </style>
+</head>
+<body>
+   
+   <div class="titre">
+    <h2 id="ouvrir">OUVRE TOI</h2>
+   <h2 id="fermer">FERME TOI</h2>
+    </div>
+   
+   <div>
+   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br/> Aperiam quod modi minus optio nisi ducimus veniam! <br/>Totam illum, aliquid excepturi similique esse voluptatibus <br/> nulla dolore ad debitis repellat itaque eveniet.</p>
+    </div>
+    
+    <script>
+        
+        
+        // déclarer une variable
+        
+        
+        // Je récupère mon h2 avec l'ID ouvrir qye j'assigne à la variable ouvre-toi
+        var ouvreToi = document.querySelector("#ouvrir");
+        
+        
+        // je récupère mon second h2 avec l'ID fermer que j'assigne à la variable ferme-toi
+        var fermeToi = document.querySelector("#fermer");
+        
+        
+        // je récupère la baslie html P qui contient du texte que j'assigne à la variable texte
+        var texte = document.querySelector("p");
+        
+        
+        
+        
+        
+        // déclarer un évènement
+        
+        
+        // je met un évènement "click" sur l'élément h2 ouvrir qui éxécute la fonction afficheLeTexte() 
+        ouvreToi.addEventListener('click', afficheLeTexte);
+        
+        // je met un évènement "click" sur l'élément h2 fermer qui éxécute la fonction cacheLeTexte()
+        
+        fermeToi.addEventListener('click', cacheLeTexte);
+        
+        
+        
+        
+        
+        
+        
+        // déclarer une fonction
+        
+        // je dis à ma fonction afficheLeTexte() de s'éxécuter et d'afficher la variable texte
+        function afficheLeTexte() {
+            texte.style.height = "200px";
+            texte.style.transition = "height 1s linear";
+
+        }
+           // je dis à ma fonction cacheLeTexte() de s'éxécuter et de cacher la variable texte
+        function cacheLeTexte() {
+            texte.style.height = "0px";
+            texte.style.transition ="height 1s linear";
+        }
+        
+        
+        
+        
+        
+    
+    </script>
+    
+</body>
+</html>

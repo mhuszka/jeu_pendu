@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+        <input type="text" name="text" id="remplir">
+        <button type="button" id="verifier">Vérifier</button>
+    </div>
+    
+</body>
+    
+    <script>
+        var remplir = document.querySelector("#remplir"); // je récupère l'élément HTML avec lequel je veux travailler
+        var verifier = document.querySelector("#verifier"); // je récupère l'élément HTML avec lequel je veux travailler
+        var myNumber = 3;
+        
+        console.log(remplir.value)
+        
+        verifier.addEventListener("click", afficheResultat);
+        
+        
+    // j'affecte un évènement pour déclencher une fonction
+        
+        function afficheResultat() {
+            
+                    
+            if(remplir.value !=3) {
+                console.log("perdu");
+            }
+
+            else {
+                console.log("gagné");
+
+            }
+            
+        }
+        
+    
+
+    
+    </script>
+</html>

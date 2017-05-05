@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <label for="number">Entrez votre numéro de téléphone</label>
+    <input type="text" name="number" id="number">
+    <input type="submit" name="submit" id="submit">
+</body>
+
+<script>
+    
+    var numero = document.querySelector("#number");
+    var envoyer = document.querySelector("#submit");
+
+    envoyer.addEventListener("click", verifie);
+    
+    function verifie() {
+        if(numero.value.length == 10) {
+            
+            console.log("bon");
+        }
+        
+        else {
+            console.log("pas bon");
+        }
+    }
+    
+    
+</script>
+</html>

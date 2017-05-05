@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+
+<body>
+   
+    <select name="couleur" id="couleur">
+        <option value="selection">Selectionner une couleur</option>
+        <option value="red">Rouge</option>
+        <option value="black">Noir</option> 
+        <option value="green">Vert</option> 
+        <option value="rose">Pink</option>  
+    </select>  
+
+<script>
+
+    
+    var choixcouleur = document.querySelector("#couleur");
+    
+    console.log(choixcouleur);
+
+    
+    choixcouleur.addEventListener ("change", changeLeFond);
+
+    function changeLeFond() {
+        if(choixcouleur.value !="selection") {
+            
+           document.body.style.backgroundColor = choixcouleur.value;
+
+        }
+    }
+       
+</script>
+</body>
+</html>
