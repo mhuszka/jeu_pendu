@@ -25,13 +25,13 @@ h2 {
 
 .touche {
     font-family: 'Inknut Antiqua', serif;
-    font-size: 15px;
+    font-size: 2vh;
 }
 
 #clavier {
     display: flex;
     flex-wrap: wrap;
-    width: 495px;
+    width: 44.5vw;
     height: 31vh;
     flex-direction: row;
     justify-content: center;
@@ -70,11 +70,11 @@ h2 {
     background-color: transparent;
     font-family: 'Inknut Antiqua', serif;
     text-align: center;
-    font-size: 2vh;
+    font-size: 3vh;
     font-weight: 300;
     color: #160024;
     width: 3vw; 
-    height: 50px;
+    height: 5vh;
     margin-right: 5px;
 }
 
