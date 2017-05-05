@@ -31,7 +31,7 @@ h2 {
 #clavier {
     display: flex;
     flex-wrap: wrap;
-    width: 44.5vw;
+    width: 44.5vh;
     height: 31vh;
     flex-direction: row;
     justify-content: center;
