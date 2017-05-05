@@ -32,7 +32,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     width: 495px;
-    height: 277px;
+    height: 31vh;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -45,7 +45,7 @@ h2 {
 .touche {
     font-family: 'Inknut Antiqua', serif;
     color: #160024;
-    font-size: 35px;
+    font-size: 3vh;
     padding-right: 30px;
     text-align: center;
     cursor: crosshair;
